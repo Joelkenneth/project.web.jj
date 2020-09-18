@@ -1,0 +1,142 @@
+/* CSS Document */
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+/* Media Queries: Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+
+/* https://catswhocode.com/how-to-make-a-responsive-website/ */
+
+html,body
+{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 5px 10%;
+    background-color: black;
+}
+
+.logo {
+    width: 50px;
+}
+
+.navbar {
+    list-style: none;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar li a {
+    color: white;
+    padding: 9px 25px;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.navbar li a:hover {
+    background-color: darkgray;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+
+button {
+    padding: 10px 12px;
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: Bold;
+}
+
+button:hover {
+    background-color: lightgrey;
+}
+
+.headbar a{
+    position: absolute;
+    color: black;
+    padding: 9px 25px;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+h1 {
+    color: black;
+    padding: 5px 25px;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    font-size: 2.5em;
+    font-weight: bold;
+    max-width: 90%;
+}
+
+h3 {
+    color: black;
+    padding-left: 25px;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 300; 
+    max-width: 80%;
+}
+
+
+
+.partner {
+    color: white;
+    padding: 16px 22px;
+    margin: 25px 25px;
+    background-color: black;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: Bold;
+}
+
+.partner:hover {
+    background-color: darkgrey;
+}
+
+
+.bodypic {
+    width: 100%;
+    position: relative;
+    
+}
+
+.business {
+    max-width: 80%;
+    left: 50%;
+   top: 50%;
+}
