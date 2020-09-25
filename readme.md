@@ -30,9 +30,9 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 2 (week 5)
 
--same as voortgang 1-
+-Er zit veel vooruitgang in. De home pagina voor mobile staat voor mijn gevoel bijna klaar. Nog wel veel tweaken met ruimtes en groottes. Ik merk dat ik daar ook de meeste moeite mee heb en de benamingen van onderdelen zonder bijv. een class te gebruiken. De carroussel zit er ook in onder de header na veel moeite, maar er moet nog wel qua usability wat verandingen.-
 
-
+![-screenshot-](images/uber-week5.jpg)
 
 ## Voortgang 1 (week 3)
 
