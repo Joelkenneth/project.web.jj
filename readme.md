@@ -24,7 +24,10 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 3 (week 6)
 
--same as voortgang 1-
+-Na een dipje heb ik wel wat stappen gemaakt, maar er zijn er nog veel te gaan. Ik heb nu 2 pages voor mobiel zo goed als af, alleen nog de code meer semantisch maken en laatste details tweaken. Alleen met mijn header loop ik nog te struggelen, dus daar zal ik hulp bij zoeken. De uitdaging wordt nu om in de vakantie de pagina's responsive te maken en de vormgeving volledig gedetailleerd te maken met bijv. animaties en micro-interacties. 
+
+![-screenshot-](images/uber-week6-home.jpg)
+![-screenshot-](images/uber-week6-about.jpg)
 
 
 
