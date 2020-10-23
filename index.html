@@ -9,89 +9,120 @@
     <title>Het Uber-platform</title>
 
     <link href="styles/style.css" rel="stylesheet">
+    <script src="script.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
 </head>
 
 <body>
-    <header>
-        <img class="logo" src="images/uberlogo.svg" alt="Uber logo">
-        <button><img src="images/user.svg" alt="Profiel"></button>
-        <a class="aanmelden" href="#"><button>Aanmelden</button></a>
-
-    </header>
-
-    <section class="slider">
-        <div class="slide" id="slide-1"><a>Beloning ontvangen</a></div>
-        <div class="slide" id="slide-2"><a>Instappen</a></div>
-        <div class="slide" id="slide-3"><a>Eten</a></div>
-        <div class="slide" id="slide-4"><a>Uber Freight</a></div>
-        <div class="slide" id="slide-5"><a>Zakelijk</a></div>
-        <div class="slide" id="slide-6"><a>Ov</a></div>
-        <div class="slide" id="slide-7"><a>Fiets en step</a></div>
-        <div class="slide" id="slide-8"><a>Elevate</a></div>
+   <nav class="navbar">
+        <div class="brand-title">Uber</div>
+        <a href="#" class="toggle-button">    
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="#">Bedrijf</a></li>
+            <li><a href="#">Veiligheid</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Informatie over COVID-19</a></li>
+          </ul>
+        </div>
+      </nav>
+        
+    <section id="slider">
+        <div><i class="fas fa-signal"></i>
+        <button>Beloning ontvangen</button></div>
+        <div><i class="fas fa-car"></i>
+        <button>Instappen</button></div>
+        <div><i class="fas fa-utensils"></i>
+        <button>Eten</button></div>
+        <div><i class="fas fa-truck-moving"></i>
+        <button>Uber Freight</button></div>
+        <div><i class="fas fa-suitcase"></i>
+        <button>Zakelijk</button></div>
+        <div><i class="fas fa-subway"></i>
+        <button>Ov</button></div>
+        <div><i class="fas fa-bicycle"></i>
+        <button>Fiets en step</button></div>
+        <div><i class="fas fa-plane-departure"></i>
+        <button>Elevate</button></div>
     </section>
 
 
-    <section>
+    <section id="eersteblok">
         <h1>Kruip achter het stuur en maak omzet
         </h1>
         <p>Rijd via het platform met het grootste netwerk van actieve passagiers.
         </p>
-        <button class="partner"> Aanmelden als Uber-partner
+        <button id="partner"> Aanmelden als Uber-partner
         </button>
-        <a class="meerinfo" href="url">Meer informatie over rijden en bezorgen</a>
-    </section>
-    
-    <section id="heroimage">
-    <img src="images/uberpic1.jpg" alt="Uber Header">
+        <a id="meerinfo1" href="url">Meer informatie over rijden en bezorgen</a>
     </section>
 
-    <section>
+    <section id="heroimage">
+        <img src="images/uberpic1.jpg" alt="Uber Header">
+    </section>
+
+    <section id="stadimage">
         <h2>We brengen meer dan 10.000 steden in beweging</h2>
-        <a href="url">View all cities</a>
-        <img class="heroimage" src="images/uberpic2.jpg" alt="Uber Product">
+        <a id="meerinfo" href="url">View all cities</a>
+        <img src="images/uberpic2.jpg" alt="Uber Product">
     </section>
 
     <section>
         <h2>Uber for Business</h2>
         <p>De kracht van Uber tijdens het werk</p>
-        <img class="business" src="images/business1.png" alt="Maaltijden">
+    </section>
+        
+   <section id="columbus">
+        <div id="columbusje">
+        <img id="business" src="images/business1.png" alt="Maaltijden">
         <h3>Maaltijden op het werk</h3>
         <p>Verras je medewerkers met hun favoriete maaltijden die bezorgd worden waar ze ook werken.</p>
-        <a class="meerinfo" href="url">Lees verder</a>
-
-        <img class="business" src="images/business2.png" alt="Ritten">
+        <a id="meerinfo" href="url">Lees verder</a>
+        </div>
+        
+        <div id="columbusje">
+        <img id="business" src="images/business2.png" alt="Ritten">
         <h3>Ritten van medewerkers</h3>
         <p>Geen omkijken meer naar zakelijke ritten. Maak programma's voor vervoer over de weg en woon-werkverkeer voor medewerkers.</p>
-        <a class="meerinfo" href="url">Lees verder</a>
-
-        <img class="business" src="images/business3.png" alt="Aangeboden Ritten">
+        <a id="meerinfo" href="url">Lees verder</a>
+        </div>
+        
+        <div id="columbusje">
+        <img id="business" src="images/business3.png" alt="Aangeboden Ritten">
         <h3>Aangeboden ritten</h3>
         <p>Maak een blijvende indruk. Regel ritten van deur tot deur voor je klanten en gasten.</p>
-        <a class="meerinfo" href="url">Lees verder</a>
+        <a id="meerinfo" href="url">Lees verder</a>
+        </div>
     </section>
 
     <section>
-        <img class="business" src="images/veiligheid.svg" alt="Veiligheid">
+        <img id="business" src="images/veiligheid.svg" alt="Veiligheid">
         <h2>Jouw veiligheid is belangrijk voor ons</h2>
         <p>Met elke nieuwe veiligheidsfunctie en elke standaard in onze Communityrichtlijnen, zetten we ons in voor een veilige omgeving voor onze gebruikers.</p>
-        <a class="leesverder" href="url">Lees meer over de Communityrichtlijnen</a>
-        <a class="leesverder" href="url">Alle veiligheidsfuncties bekijken</a>
+        <a id="meerinfo" href="url">Lees meer over de Communityrichtlijnen</a>
+        <a id="meerinfo" href="url">Alle veiligheidsfuncties bekijken</a>
     </section>
 
-    <section>
+    <section id="prefooter">
+        <i class="fas fa-user-friends"></i>
         <h3>Over ons</h3>
         <p>Ontdek hoe we zijn ontstaan, wat ons motiveert en hoe we kansen creëren.</p>
-        <a class="meerinfo" href="about.html">Lees verder</a>
+        <a id="meerinfo" href="about.html">Lees verder</a>
 
+        <i class="far fa-newspaper"></i>
         <h3>News room</h3>
         <p>Bekijk aankondigingen over onze nieuwste releases, initiatieven en partnerschappen.</p>
-        <a class="meerinfo" href="url">Lees verder</a>
+        <a id="meerinfo" href="url">Lees verder</a>
 
+        <i class="fas fa-home"></i>
         <h3>Wereldburgerschap</h3>
         <p>Lees hoe we ons inzetten voor een positieve impact op de steden waarin we actief zijn.</p>
-        <a class="meerinfo" href="url">Lees verder</a>
+        <a id="meerinfo" href="url">Lees verder</a>
     </section>
 
     <footer>
