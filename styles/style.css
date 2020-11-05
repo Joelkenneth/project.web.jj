@@ -17,6 +17,7 @@ body {
 
 .navbar {
     padding-left: 6em;
+    padding-right: 6em;
     display: flex;
     position: relative;
     align-items: center;
@@ -24,7 +25,7 @@ body {
     color: white;
 }
 
-.brand-title {
+.logo {
     font-size: 1.3em;
     margin: .8em .8em .8em 1.2em;
     font-family: 'Open Sans', sans-serif;
@@ -50,7 +51,7 @@ body {
     display: block;
     text-decoration: none;
     color: white;
-    padding: 1em;
+    padding: .6em .8em .6em .8em;
     font-family: 'Open Sans', sans-serif;
     font-size: 0.9em;
     font-weight: 600;
@@ -61,11 +62,18 @@ body {
     border-radius: 30px;
 }
 
+.navbar p {
+    text-decoration: none;
+    color: white;
+    padding: 1em;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
 .toggle-button {
-    position: absolute;
-    top: 1.6em;
-    right: 1.2em;
-    display: none;
+    order: 2;
+    margin: 1.7em 1.3em 1.6em 1em;
     flex-direction: column;
     justify-content: space-between;
     width: 13px;
@@ -80,7 +88,6 @@ body {
 
 @media (max-width: 800px) {
     .navbar {
-        flex-direction: column;
         align-items: flex-start;
         padding-left: 0;
     }
@@ -102,10 +109,14 @@ body {
 
     }
 
-
+    .navbar p {
+        display: none;
+    }
+    
+    
     .navbar-links ul li a {
         margin: 0;
-        padding: 0.5em 0.75em;
+        padding: .5em .75em;
         font-family: 'Open Sans', sans-serif;
         text-decoration: none;
         font-size: 1.8em;
@@ -121,21 +132,25 @@ body {
 }
 
 #profiel {
+    margin: 1.5em 0 1.5em auto;
     display: flex;
-    width: 16px;
-    float: right;
+    width: 14px;
 }
 
 #aanmelden {
-    margin: 0;
-    padding: .5em 1em;
+    margin: 1em 0 1em 1em;
+    padding: .6em .8em .6em .8em;
     background-color: white;
     border-radius: 30px;
     text-decoration: none;
     color: black;
     font-family: 'Open Sans', sans-serif;
-    font-size: 0.9em;
+    font-size: .9em;
     font-weight: 600;
+}
+
+#aanmelden:hover {
+    background-color: lightgrey;
 }
 
 .slider {
@@ -162,7 +177,7 @@ body {
     color: black;
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
-    font-size: 0.9em;
+    font-size: .9em;
     font-weight: 600;
     border: none;
     background: none;
@@ -170,29 +185,9 @@ body {
 
 }
 
-.slider div button:focus {
-    border-bottom: 2px solid;
-    color: black;
-    line-height: 2em;
-}
-
-
-
 .slider img {
     width: 18px;
     margin: 1em;
-}
-
-
-a button {
-    padding: 0.7em 1em;
-    background-color: white;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: Bold;
 }
 
 a button:hover {
@@ -213,7 +208,7 @@ section p {
 h1 {
     color: black;
     margin: 0;
-    padding: 0.75em 0.75em;
+    padding: .75em .75em;
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
     font-size: 2.1em;
@@ -224,7 +219,7 @@ h2 {
     width: 90%;
     color: #333333;
     margin: 0;
-    padding: 0.75em 0.75em 0.65em 0.9em;
+    padding: .75em .75em .65em .9em;
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
     font-size: 1.7em;
@@ -235,7 +230,7 @@ h2 {
 
 h3 {
     margin: 0;
-    padding: 0 0 0.5em 1.5em;
+    padding: 0 0 1em 1.4em;
     color: #333333;
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
@@ -246,15 +241,16 @@ h3 {
 
 
 .meerinfo {
-    margin: 1em;
-    padding-left: .5em;
-    padding-bottom: 1.5em;
+    margin: 1.5em;
+    padding-bottom: 4px;
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
     font-size: 1em;
     font-weight: 300;
     max-width: 90%;
     color: black;
+    display: table;
+    border-bottom: 1px solid lightgray;
 }
 
 .meerinfo a {
@@ -262,14 +258,16 @@ h3 {
 }
 
 .meerinfo1 {
-    margin: 0;
-    padding-left: 1.5em;
+    padding-bottom: 4px;
+    margin-left: 1.5em;
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
     font-size: 1em;
     font-weight: 300;
     max-width: 90%;
     color: black;
+    display: table;
+    border-bottom: 1px solid lightgray;
 }
 
 
@@ -278,7 +276,7 @@ h3 {
     color: white;
     width: 17em;
     padding: 0.9em 1.8em;
-    margin: 0 15em 1.5em 1.5em;
+    margin: 0 1.5em 1.5em 1.5em;
     background-color: black;
     border: none;
     cursor: pointer;
@@ -312,7 +310,7 @@ h3 {
         padding-left: 1em;
         height: 8.5em;
         position: absolute;
-        width: 80%;
+        width: 77%;
         left: 12em;
         top: 8em;
         background-color: white;
@@ -375,8 +373,9 @@ h3 {
     }
 
     .stadimage a {
+        margin-left: 12em;
         position: absolute;
-        padding: 0 2em 2em 11em;
+        padding-bottom: 4px;
     }
 
     h2 {
@@ -397,6 +396,10 @@ h3 {
     .uber-business p {
         padding-left: 1.5em;
     }
+    
+    .uber-business article {
+        width: 33%;
+    }
 }
 
 .uber-business img{
@@ -409,14 +412,45 @@ h3 {
 
 }
 
-.business img {
+.veiligheid img {
     margin: 0;
     padding: 1.5em;
     width: 100%;
-    display: flex;
     align-items: center;
     text-align: center;
 
+}
+
+@media (min-width: 1000px) {
+    .veiligheid {
+        display: flex;
+        justify-content: space-between;
+        padding: 5em 12em 1em 12em;
+    }
+    
+    .veiligheid article {
+        width: 50%;
+    }
+    
+    .veiligheid h2  {
+        padding-left: 0;
+        max-width: 10em;
+    }
+    
+    .veiligheid p {
+        padding-left: 0;
+    }
+    
+    .veiligheid a.meerinfo {
+        margin: 0;
+        padding-left: 0;
+        line-height: 2em;
+    }
+    
+  
+    .veiligheid article:nth-of-type(1){
+    order: 2;
+    }
 }
 
 
@@ -456,50 +490,48 @@ p {
 
 .linksonder img {
     width: 100%;
-    height: 65vh;
+    height: 30em;
     object-fit: cover;
 }
 
-.linksmidden {
+.dara-ceo {
     position: relative;
     margin: 0;
     padding: 0;
 }
 
 
-.linksmidden h1 {
+.dara-ceo h1 {
     position: absolute;
-    left: 0;
-    top: 2em;
     color: white;
     margin: 0;
-    padding: 1.4em 0.75em;
+    padding: 3em 0 0 .75em;
 }
 
-.linksmidden img {
+.dara-ceo img {
     width: 100%;
-    height: 65vh;
+    height: 30em;
     object-fit: cover;
 }
 
-.linksmidden p {
+.dara-ceo p {
     width: 90%;
     left: 0;
-    top: 14em;
+    top: 13em;
     position: absolute;
     color: white;
 }
 
-.linksmidden button {
+.dara-ceo button {
     color: black;
     position: absolute;
     left: 0;
-    top: 20em;
+    top: 19em;
     padding: 0.9em 1.8em;
     margin: 0 0 1.5em 1.5em;
     background-color: white;
     border: none;
-    border-radius: 0px;
+    border-radius: 0;
     cursor: pointer;
     transition: all 0.5s ease 0s;
     font-family: 'Open Sans', sans-serif;
@@ -524,8 +556,8 @@ p {
 
 @media (min-width: 1000px) {
     .prefooter-row {
-        padding-right: 6em;
-        padding-left: 6em;
+        padding-right: 10em;
+        padding-left: 10em;
     }
     
     .prefooter-column {
@@ -568,7 +600,6 @@ footer p {
 
 footer h3 {
     margin: 0;
-    padding: 0 0 0.5em 1.5em;
     color: white;
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
@@ -579,7 +610,6 @@ footer h3 {
 
 
 footer a {
-    padding-left: .3em;
     text-decoration: none;
     color: white;
     font-family: 'Open Sans', sans-serif;
@@ -596,13 +626,8 @@ footer li {
     padding-bottom: .5em;
 }
 
-footer section {
-    padding: 3em 0 3em 1em;
-}
 
 footer section img {
-    fill: #ffffff;
-    float: left;
     width: 16px;
     margin: 1em;
 }
@@ -615,6 +640,12 @@ footer section p {
     font-size: 0.9em;
     font-weight: 600;
 }
+
+.social-media {
+    padding-top: 2em;
+    padding-left: 1em;
+}
+
 
 @media (min-width: 1000px) {
     footer {
@@ -634,11 +665,8 @@ footer section p {
         clear: both;
     }
     
-    .footer-logo {
-    padding: 3em 0 2em 2em;
-    }
     
-    footer p {
-        padding: 0 0 2em 2.5em;
+    footer h3 {
+        padding-bottom: 1em;
     }
 }
