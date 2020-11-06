@@ -1,3 +1,6 @@
+Link naar site:
+https://joelkenneth.github.io/project.web.jj/
+
 # Procesverslag
 **Auteur:** Joël Jansen
 
@@ -10,7 +13,9 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 2. -bron 2-
 3. -...-
 
+## Herkansing (week 9)
 
+De versie tijdens het vorige gesprek was niet af, dus moest ik voor een herkansing gaan. En nu vind ik wel dat mijn site af is. Tuurlijk kan je nog door blijven tweaken totdat alles 100% is, maar dan heb je ook nog meer weken nodig. Ik heb tijdens het maken van de herkansing echt stappen gemaakt, niet alleen in mijn site maar ook het coderen. Het responsive maken (voor 2 schermgroottes) is goed gelukt naar mijn idee. Door middel van flexbox veranderen kolommen van een 1 koloms (mobile) op het juist moment naar 2 of 3 kolommen. Naast het afmaken heb ik ook alle feedback verwerkt als geen "#" meer bij href's, geen 0em etc., alle id's verandert naar classes behalve op de hele specifieke id's na dan, ik heb font awesome vervangen door gebruik te maken van svg'tjes, veel div's verandert in article om het positioneren te vereenvoudigen en de vh's verwijdert uit de css en consistent gebleven in het gebruik van em. Het enige wat jammer is, is dat ergens in het proces mijn dropdown menu in de navbar gecrasht is. Doordat ik wat tips had gekregen om elementen in mijn navbar te positioneren werkt die niet meer. Over het algemeen ben ik nu dik tevreden met mijn resultaat. Als ik op een gegeven moment zonder iets op te zoeken een articles in een sections kader en display flex + order er op gooi en alles staat ineens kaarsrecht, dan is dat een dikke win. Aan het begin van dit blok gebruikte px voor alles groottes, dus ik ben van ver gekomen.
 
 ## Eindgesprek (week 7/8)
 
