@@ -11,7 +11,6 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
 }
 
 
@@ -30,8 +29,13 @@ body {
     margin: .8em .8em .8em 1.2em;
     font-family: 'Open Sans', sans-serif;
     letter-spacing: -1px;
-
 }
+
+.logo a {
+    text-decoration: none;
+    color: white;
+}
+
 
 .navbar-links {
     height: 100%;
@@ -53,7 +57,7 @@ body {
     color: white;
     padding: .6em .8em .6em .8em;
     font-family: 'Open Sans', sans-serif;
-    font-size: 0.9em;
+    font-size: .9em;
     font-weight: 600;
 }
 
@@ -67,7 +71,7 @@ body {
     color: white;
     padding: 1em;
     font-family: 'Open Sans', sans-serif;
-    font-size: 0.9em;
+    font-size: .9em;
     font-weight: 600;
 }
 
@@ -90,6 +94,7 @@ body {
     .navbar {
         align-items: flex-start;
         padding-left: 0;
+        padding-right: 0;
     }
 
     .toggle-button {
@@ -112,8 +117,8 @@ body {
     .navbar p {
         display: none;
     }
-    
-    
+
+
     .navbar-links ul li a {
         margin: 0;
         padding: .5em .75em;
@@ -275,7 +280,7 @@ h3 {
 .partner {
     color: white;
     width: 17em;
-    padding: 0.9em 1.8em;
+    padding: .9em 1.8em;
     margin: 0 1.5em 1.5em 1.5em;
     background-color: black;
     border: none;
@@ -295,7 +300,7 @@ h3 {
 
 .heroimage img {
     width: 100%;
-    height: 40vh;
+    height: 19em;
     object-fit: cover;
 }
 
@@ -341,7 +346,7 @@ h3 {
     .eersteblok h1 {
         color: black;
         margin: 0;
-        padding: 0.75em 1em 0.5em 0.5em;
+        padding: .75em 1em .5em .5em;
         font-family: 'Open Sans', sans-serif;
         text-decoration: none;
         font-size: 3em;
@@ -359,16 +364,68 @@ h3 {
     }
 }
 
+
+.heroimage-about {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.heroimage-about h1 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: white;
+    margin: 0;
+}
+
+.heroimage-about img {
+    width: 100%;
+    height: 30em;
+    object-fit: cover;
+}
+
+@media (min-width: 1000px) {
+    .heroimage-about img {
+        width: 100%;
+        height: 44em;
+    }
+
+    .heroimage-about h1 {
+        z-index: 1;
+        color: white;
+        font-size: 3em;
+        padding-left: 4em;
+        padding-top: 12em;
+    }
+
+    .uber-kansen {
+        width: 70%;
+        padding-bottom: 3em;
+    }
+
+    .uber-kansen h2 {
+        width: 75%;
+        padding-top: 2em;
+    }
+
+    .uber-kansen p {
+        padding-left: 12em;
+    }
+}
+
 .stadimage img {
     width: 100%;
-    height: 30vh;
+    height: 14em;
     object-fit: cover;
 }
 
 @media (min-width: 1000px) {
     .stadimage img {
         width: 100%;
-        height: 70vh;
+        height: 32em;
         object-fit: cover;
     }
 
@@ -378,13 +435,13 @@ h3 {
         padding-bottom: 4px;
     }
 
-    h2 {
+    .stadimage h2 {
         width: 20em;
         font-size: 2em;
         padding-top: 1em;
         padding-left: 6em;
     }
-    
+
 
     .uber-business {
         display: flex;
@@ -396,13 +453,21 @@ h3 {
     .uber-business p {
         padding-left: 1.5em;
     }
-    
+
     .uber-business article {
         width: 33%;
     }
+
+    .uber-kracht p {
+        padding-left: 12em;
+    }
+
+    h2 {
+        padding: 1em 0 1em 7em;
+    }
 }
 
-.uber-business img{
+.uber-business img {
     margin: 0;
     padding: 1.5em;
     width: 100%;
@@ -411,6 +476,75 @@ h3 {
     text-align: center;
 
 }
+
+.uber-about img {
+    margin: 0;
+    padding: 1.5em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+}
+
+.uber-safe img {
+    margin: 0;
+    padding: 1.5em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+}
+
+@media (min-width: 1000px) {
+    .uber-about {
+        display: flex;
+        justify-content: space-between;
+        padding: 3em 10em 1em 10em;
+    }
+
+    .uber-about p {
+        padding-left: 1.5em;
+    }
+
+    .uber-about article {
+        width: 50%;
+    }
+
+    .uber-about h2 {
+        padding-left: .75em;
+    }
+
+    .uber-safe {
+        display: flex;
+        justify-content: space-between;
+        padding: 3em 10em 1em 10em;
+    }
+
+    .uber-safe p {
+        padding-left: 1.5em;
+    }
+
+    .uber-safe article {
+        width: 50%;
+    }
+
+    .uber-safe h2 {
+        padding-left: .75em;
+    }
+
+    .uber-safe article:nth-of-type(1) {
+        order: 2;
+    }
+
+    .uber-nieuws {
+        font-size: 2em;
+        padding-left: 5.8em;
+    }
+}
+
+
 
 .veiligheid img {
     margin: 0;
@@ -425,34 +559,33 @@ h3 {
     .veiligheid {
         display: flex;
         justify-content: space-between;
-        padding: 5em 12em 1em 12em;
+        padding: 5em 12em 5em 12em;
     }
-    
+
     .veiligheid article {
         width: 50%;
     }
-    
-    .veiligheid h2  {
+
+    .veiligheid h2 {
         padding-left: 0;
         max-width: 10em;
     }
-    
+
     .veiligheid p {
         padding-left: 0;
     }
-    
+
     .veiligheid a.meerinfo {
         margin: 0;
         padding-left: 0;
         line-height: 2em;
     }
-    
-  
-    .veiligheid article:nth-of-type(1){
-    order: 2;
+
+
+    .veiligheid article:nth-of-type(1) {
+        order: 2;
     }
 }
-
 
 
 
@@ -468,31 +601,6 @@ p {
     text-decoration: none;
 }
 
-
-
-
-.linksonder {
-    position: relative;
-    margin: 0;
-    padding: 0;
-}
-
-
-
-.linksonder h1 {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    color: white;
-    margin: 0;
-    padding: 1.4em 0.75em;
-}
-
-.linksonder img {
-    width: 100%;
-    height: 30em;
-    object-fit: cover;
-}
 
 .dara-ceo {
     position: relative;
@@ -527,7 +635,7 @@ p {
     position: absolute;
     left: 0;
     top: 19em;
-    padding: 0.9em 1.8em;
+    padding: .9em 1.8em;
     margin: 0 0 1.5em 1.5em;
     background-color: white;
     border: none;
@@ -539,8 +647,33 @@ p {
     font-size: 1em;
 }
 
+@media (min-width: 1000px) {
+    .dara-ceo h1 {
+        width: 40%;
+        padding-top: 4em;
+        padding-left: 4em;
+        color: white;
+        font-size: 3em;
+    }
+
+    .dara-ceo p {
+        padding-left: 12em;
+        width: 45%;
+        top: 23em;
+        font-weight: 500;
+    }
+
+    .dara-ceo button {
+        margin-left: 12em;
+        top: 28em;
+    }
+
+    .dara-ceo img {
+        height: 45em;
+    }
+}
+
 .prefooter-row {
-    padding-top: 6em;
     padding-bottom: 5em;
 }
 
@@ -559,17 +692,10 @@ p {
         padding-right: 10em;
         padding-left: 10em;
     }
-    
-    .prefooter-column {
-        float: left;
-        width: 33%;
-    }
 
-
-    .prefooter-row:after {
-        content: "";
-        display: table;
-        clear: both;
+    .prefooter-row {
+        display: flex;
+        justify-content: space-between;
     }
 }
 
@@ -637,13 +763,22 @@ footer section p {
     text-decoration: none;
     color: white;
     font-family: 'Open Sans', sans-serif;
-    font-size: 0.9em;
+    font-size: .9em;
     font-weight: 600;
 }
 
+
 .social-media {
-    padding-top: 2em;
-    padding-left: 1em;
+    padding: 2em 0 3em 1em;
+}
+
+.social-media article:nth-of-type(2) {
+    display: flex;
+}
+
+.social-media article:nth-of-type(2) p {
+    padding: 0;
+    width: 25%;
 }
 
 
@@ -651,22 +786,30 @@ footer section p {
     footer {
         padding-right: 4em;
         padding-left: 6em;
+        padding-bottom: 2em;
     }
 
-    .footer-column {
-        float: left;
-        width: 25%;
+    .footer-row {
+        display: flex;
+        justify-content: space-between;
     }
 
-
-    .footer-row:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-    
-    
     footer h3 {
         padding-bottom: 1em;
     }
+
+    .social-media article:nth-of-type(2) {
+        padding-top: 2em;
+    }
+
+    .social-media article:nth-of-type(2) p {
+        width: 10%;
+    }
+}
+
+.bottom-page {
+    color: #afafaf;
+    font-family: 'Open Sans', sans-serif;
+    font-size: .75em;
+    font-weight: 400;
 }
